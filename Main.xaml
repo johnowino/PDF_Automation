@@ -160,7 +160,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </upap:ExtractImagesFromPDF>
-    <ui:ReadPDFText PreserveFormatting="{x:Null}" sap2010:Annotation.AnnotationText="This reads all characters in a pdf file and stores them in a string variable named License" DisplayName="Read PDF Text" FileName="C:\Users\John\Downloads\Laura Mbanda Owino DL.pdf" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_3" Range="All" Text="[License]">
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" sap2010:Annotation.AnnotationText="This reads all characters in a pdf file and stores them in a string variable named License" DisplayName="Read PDF Text" FileName="Laura Mbanda Owino DL.pdf" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_3" Range="All" Text="[License]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
