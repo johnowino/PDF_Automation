@@ -153,7 +153,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <upap:ExtractImagesFromPDF sap2010:Annotation.AnnotationText="Thois extracts all image assets from a pdf file and stores them in a folder" DisplayName="Extract Images From PDF" FileName="Laura Mbanda Owino DL.pdf" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="ExtractImagesFromPDF_2" OutputFolderName="class-demo">
+    <upap:ExtractImagesFromPDF sap2010:Annotation.AnnotationText="This extracts all image assets from a pdf file and stores them in a folder" DisplayName="Extract Images From PDF" FileName="Laura Mbanda Owino DL.pdf" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="ExtractImagesFromPDF_2" OutputFolderName="class-demo">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -243,7 +243,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Assign sap2010:Annotation.AnnotationText="We are using split function to clean out the unneccesaary characters on the left of the ID No" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign sap2010:Annotation.AnnotationText="We are using the split function to clean out the unneccesaary characters on the left of the ID No" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[RefinedIDNo]</OutArgument>
       </Assign.To>
