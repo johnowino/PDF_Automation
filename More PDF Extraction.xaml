@@ -1,0 +1,155 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="More_PDF_Extraction" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="674,1605" sap2010:WorkflowViewState.IdRef="More_PDF_Extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="More_PDF_Extraction" sap:VirtualizedContainerService.HintSize="592,1540" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: GTD149075 - HELEN PLAZA.pdf - Adobe Acrobat Reader (64-bit)" sap:VirtualizedContainerService.HintSize="530,1429" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="fb040c90-d7d3-4067-95b4-de866e5cfc8a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1138" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="ServiceCost" />
+              <Variable x:TypeArguments="x:String" Name="MaterialCost" />
+              <Variable x:TypeArguments="x:String" Name="TotalCost" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Service Cost'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="fb040c90-d7d3-4067-95b4-de866e5cfc8a" TextString="[ServiceCost]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CvType="AnyWordGroup" DesignTimeRectangle="1054, 502, 122, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'acrobat.exe GTD149075'" Guid="13a19d06-24ef-4f5f-97e1-12d6ab69fd3b" InformativeScreenshot="680ff70257976830aed2115d17f90126.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='GTD149075 - HELEN PLAZA.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Service Costs" CvType="Text" DesignTimeRectangle="434, 498, 97, 24" ElementType="Text" FriendlyName="'Service Cost'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='9' role='row' /&gt;&lt;ctrl name='Service Cost' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='Service Cost' role='text' automationid='' check:text='Service Cost' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAcCAYAAAB4UXHGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARFSURBVGhD7Vgxi9tKEPbfUO32unSvUuXm6mtVuEmRLoXAXXqBq1cFBNcEchwLByFwGMQ1aQwqHrzCCK4Iwai54jAmhOMQ35uRdiTtamU7j3eHeOiDLbxa7c7MN/PtyJOrqyuMY1ijJmXEcDCSMkCMpAwQIykDxEjKADGSMkCMpAwQFilPyNMviMMZJpNJPbwgwvVNirzQy14ce6SRT2e/hcqf9dxLw+W7Bz/8iJs0x4u4XuRIL0OcRynaXrZIKbBPl/BLQxSyvTZDv1jOL1avSMwrgnxcLwN4kzME0W3te5GvcVmSdIa5+v7fE5MrBET+tJeUYoN45mHiLZDs7OMfkIRvyLgLxNkvPfd/wRO26h0RQkkXralGLRTfoeZnL+P7UVKeU0RTKlknKS5QZWW3iAI2uJE51S51fagXvMd7nwjX68q1YYKdXlZCkmIWIytc8rVDtloi8GSPGcLLtVm5+wyriDNer/ECROqI7B5MRgb7eQelviLNn/QcS5067LtjjWGPjk39TPta5Glbvh4pEOfVAj9EbBhhwyF1xRbJgkv9HFH6WC2rD55hkWxRUNDu0r+w4qqzglBkMWa03yze8O4WKWIbycvyGzlFDicfqvMlu/drREy8v4DKmG7HGgeqc8nGQCHXc4fR2ld832+gLJkrtgpzj9bUkr/DJp5TwrxBmDzwRLdSpCobUnhS7g9hjwfr7CfzsuvLLiPb6beQIr9LFNgli1K/G53+hSy+oLNEIixSdglCrhBjnx9QwVTb8FO/33K4hL1vF89phGk7MMcgPvpLpHLvMqyYVPva9liwSRG1MkipQVKR3FDJfkRYy06LdQl2J7usYPatk6yWIOvf3lxhW/pp7iOB60heDU1QXVkNqnenCNQPPWPid0mRyuquF5urBKgqhXwvVUe5O7iTKqUHRf4Ny1IbNfMS7N5xhBQjg3/qymlnlZuU/sAJKbYdMvpJ6bfRjX5bxGaf5LsSS74fbq6j1j3IqqOaa8EmhUFqpUn5rAMjmm5DJEdvoDfrz1yNAw43d8id4475l5Viy+kpOHrRMyrl4Gx/PrFSOqD7NIn11WDJu71XUylO3RYIKTqbe3VVl584eCgLZY8/fPh0rhlwkxS3bdKmc2Y+6MprNRklpN09pO3HWmKrgTnxTnFDJ880QsosHCXF6CpiJGUHw2ha0UbzXd1X8wFWX+CHSKmDQc87QbNIIRuqzoXKP/6bntL5m0vTJlf3tf7TsrsHdeD7Px6rcxmO7qv1fuV708xU3aJ+r7SnRb6+2DkhH/N73G9XVfI1pDCqnvy63evz4Muq8zcLHWL34bwuyZpsO0gKQSrAzroOKQz7O8UMIIM1XBm207dMnBhr+sES9dn0pwy862+Wru/d7xTeL241Si57JNn4GVf8juKfnHbRj3hdjKQMECMpA8RIygAxkjJAjKQMECMpA0RNyjiGMq7wD+4FaJrPpULgAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The service cost is: &quot;+ServiceCost]" />
+            <uix:NGetText DisplayName="Get Text 'Material cost'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fb040c90-d7d3-4067-95b4-de866e5cfc8a" TextString="[MaterialCost]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CvType="AnyWordGroup" DesignTimeRectangle="1063, 530, 113, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Ksh 25,792.0'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='10' role='row' /&gt;&lt;ctrl name='Ksh 25,792.0' role='text' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="e3fa50bd-7fea-451c-8087-9cdf35277b6c" ImageBase64="" InformativeScreenshot="870c4ade7ab8d563e063b016e8c307bd.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='GTD149075 - HELEN PLAZA.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Material" CvType="Text" DesignTimeRectangle="434, 526, 97, 23" ElementType="Text" FriendlyName="'Material cost'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='10' role='row' /&gt;&lt;ctrl name='Material cost' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='Material cost' role='text' automationid='' check:text='Material cost' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAbCAYAAABlVEF+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR/SURBVGhD7Zexi+NGFMb9b6hWu911W6ly4/qaLVS4ueKKgy0ELgLpBVsFUgmWwEGWZcAQDg6DCIQ0DiJNWIxgi2Mxag6yGBeHWcR370nzRtJYimUuJCr0gWBXfjPz3vvNvHma3N3dYXyG9Rgoo4ajEcoANUIZoEYoA9QIZYAaoQxQI5QBqoLykiB0J5hM+HmNKP2iTer6jDh4pW3eQGUv+n0fHZAlPyGY3SA5Z1iXxF9fIdOvTmuPJPQwccN/x4dvVZ4huQ0wCxPU3emA4mAabZBrI6NdjMARm3OhPEH57v+ckIFByRR8yqV7EopzCe/SwWQaIW1QyYnJAs70HYIrSu4I5dvVG4r7HaIfX7cknUvXJZ2gD7jn5DZ+3yGNIwQewSxOEcP1EaoEWQFWA5HfJi589VSMxD7FKvThtI5j6bHOFYLrqR5P5fXhN6t85TRVjCgQG34u4IcKSXYoLPpDoXhWN/BNVZgiuF3XfOJSrBD6F2Ytxw+hkqxWXY5tGrFpIOY3nc88S9qghFg/RJhOXiGIP5fzs4rSxXdNqhMsUA7YqreUVHJcbSjswhibaE7vLjBXn7SjLSdlv0bIIL0FVLqjFxRI/D08Kp9euNZzCVB6t1hRQJSwX/9EdmjeKflWYe6QTaCQ7nlFgrS5LRLrzBW2hRN9oDyTzYzWI6A3v9N6tk+1/2Wt/Qaq2AxVvMafwmeeV3JSy6t9UvJPUHOC2AYlOWwQTR04QUxTFda6dHFJkyRpKHlpe1Tu9P1THU0byhekEZ9IC755L82GrGc1H+JvAcUeI9KNiVmzBxS5NxvxaB+cBeK/H8p4PWpYCvhakge22eXkXgj3KDZLNhSJqRXKiw5SL1CVLr78LSgi7iSWCkrRcx+ao1+BtaF0zEMqA5IS12HXgCLikvGh9EG9r0qHieM0lHLtut9N5SlXkeN7wMytN0Z5UmhtL0BE/iwbpU3rrJNCFuXimjTvHvct1JZrs50kOc4MgWv4+yIpy1WEa3bKJK0LCo9re86DkmcrLPSdxvX9nsEsf0F0zS28jO0P5Tjppbp/FygewqQsvHw/LGsb9OiOa7voaXN3QpHj6AQrPFHpcu0dL4HKcbePs1xkp6CYXdylPlDk+2lGCXnWBix77H93Uo5EDU0cBeXmldLYBoXUDUXqtPsGwbtZrTZageqJm0HQJZvclA50QpF7wE6kNA5Sj/tA0TY2YGkkzoDSfqcIdDoF6z963SntsnJwPpRqVzQXspJknJkj2jAWbk1V1R4bKDohPNdzhvSRbNu6r/UPVsfUB4oApvIQ/UUrkUxHRDbnQKGtJZ1jOZfdxbV0X/kW8aLefenGiOcoOjieV2KTLo6kY+AN/Zw94nG7KjfEP0GpSlj9FNhJYggfm/04X27LnxHyR6bZcVVwbCO7g+uuqn+ncGsdxbqtZfWBQrK/d4p56F4Jr+hvKSl9oLDs7xS+Cz7WfOKG4tR3Ssu321FssgH4N76LdsW3VgVl1GA0QhmgRigD1AhlgBqhDFAjlAHKQBmfoTx3+ArVbGbHFITjlwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The material cost is: &quot;+MaterialCost]" />
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[TotalCost]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[ServiceCost+MaterialCost]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The total cost is: &quot;+TotalCost]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" FilePath="C:\Program Files\Adobe\Acrobat DC\Acrobat\acrobat.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJPSURBVFhH1ZY9aBRBFMevUVCUKIliOPHjEPzIkTRiOAWxSBobLawU7MQ2aBdFBBHkIHiFVjYhcGijyNkIKS5dIHCQSs6rQgq90mZvd7Z5vv9bNu7ODHGyN5xY/Jh9b96895+Zt8uWiOifYjjisdIRZo2hIdhiFvTcNgwHL1yLz45vD1a/UhAEe+fnD4oWH/2KJ/YFkos3pNfIYjh4AYUfP9iT74HBxjrFE/sHnG9zNxGGAwJsCYvgIsJw+BQA/iYiZwBXAdHrV0nDTR6k4HvXGpOSiJCeeK7XyxnAVYCaqVD4fkVERIuPrTFZwjdL2xy7pdfLGcBVQDx1SkZ15RKp+3eMeQN+O5Bbr5czgPMJzNcobNQlKU7CFqPjVUD47i3FJw6QOnfcOm/DqwA0HmJdmjDFqwA0nrp7m9TVaVK35qwxOl4FqDPjcvdhe5Xi8iFS5yelMePyYSmk5rhHvnzKrfEiIHr5TJLL/d+8TqpyLCl48eSfq+BRTma6kls7lAB8eNTpo0nR2SlS12bkGvAm4BSihYeJKBRm0BvqxuVcjsIC5K65MHYWvXiadL6t8TCP3nhwTwTr84UFwBc94cT8wcEzXkE9xoXCAnAC8GPntp25UliAL/5/AdVqVajX6zt2rVajVqtlzNnwIqDf78uY2r1eT0Skvt3wIgAFswLSMQWnkV2TxYsA7LbZbO7YnU5ntCeg2yjebrdHI2BYnAXgJ9KWYBjkx9RRwGd1odwddL9ZExUBuZCTcy/r9XJGCgc2oNYzDVstwzFqrM7RQaXfNljUiwb3UnIAAAAASUVORK5CYII=" InformativeScreenshot="faa273edb34f2c824c85bbd6c5c88a4b.png" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='GTD149075 - HELEN PLAZA.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" Title="GTD149075 - HELEN PLAZA.pdf - Adobe Acrobat Reader (64-bit)" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
